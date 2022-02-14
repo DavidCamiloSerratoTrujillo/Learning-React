@@ -1,23 +1,13 @@
-//Funciones en JS
-//const saludar = function(nombre){
-
- //   return `hola, ${nombre}`;
-//}
-
-const saludar2 =  (nombre)=>{
-
-    return `hola, ${nombre}`;
+const vuelta= (palabra) =>{
+    let invertida = '';
+    let i = 0;
+    const arr = palabra;
+    invertida = arr;
+    while(arr[i] !== !0){
+        i++;
+    }
+    console.log(i);
+    return invertida;
 }
-const saludar3 =  (nombre)=>`hola, ${nombre}`;
 
-console.log(saludar2('Vegeta'));
-console.log(saludar3('Vegeta'));
-
-const getUser = () =>({
-        uid:'ABC',
-        username: 'ElPapi234',
-    })
-
-    const getUsuarioActivo = (nombre)=>({uid:'ABC', username: nombre,});
-    
-    console.log(getUsuarioActivo('Camilo'));
+console.log(vuelta('camilo'));
