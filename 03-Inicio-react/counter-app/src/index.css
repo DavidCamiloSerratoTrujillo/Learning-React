@@ -1,0 +1,17 @@
+html, body{
+    color: white;
+    background-color: #21232A;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    padding: 70px;
+}
+button{
+    font-size: 1.3rem;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius:10%;
+
+}
+button:hover {
+    background-color: #363a4b;
+}
