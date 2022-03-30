@@ -16,7 +16,7 @@ const AddCategory = ({setCategories}) =>{
 
     }
     return(<form onSubmit={handleSubmit}>{/*Se envia el parametro automaticamente es decir como solo hay un valor se envia el valor que ingresamos en el input */}
-    
+    <p>{inputValue}</p>
         <input 
         type = "text"
         value = {inputValue}

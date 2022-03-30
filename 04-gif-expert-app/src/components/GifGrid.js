@@ -1,6 +1,6 @@
 import React from "react";
 import {GifGridItem} from "./GifGridItem";
-
+import PropTypes  from "prop-types";
 import { useFectchGifs } from "../hooks/useFectchGifs";
 export const GifGrid = ({category}) =>{
 
@@ -27,4 +27,7 @@ export const GifGrid = ({category}) =>{
     </div>
     </>
     );
+}
+GifGrid.popTypes = {
+    category:PropTypes.string.isRequired
 }

@@ -1,14 +1,14 @@
-import PrimeraApp from "../PrimeraApp";
-import{shallow} from 'enzyme';
+import PrimeraApp from "../PrimeraApp";//Trae todo el componente de primera app
+import{shallow} from 'enzyme';//shallow es para probar los compoonentes
 import React from 'react';
 import '@testing-library/jest-dom'
 describe('Pruebas en <PrimeraApp>',()=>{
 
-    test('debe demostrar <PrimeraApp/> correctamente',()=>{
+    test('debe demostrar <PrimeraApp/> correctamente',()=>{//Para verificar que se está mostrando correctamente se usa toMatchSnapshot
        
         const saludo = 'Hola, soy goku';
         const wrapper = shallow(<PrimeraApp saludo = {saludo}/>);
-        expect(wrapper).toMatchSnapshot();
+        expect(wrapper).toMatchSnapshot();//Para verificar que se muestra correctamente creo
 
     });
 

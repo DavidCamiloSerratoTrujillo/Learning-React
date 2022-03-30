@@ -17,10 +17,7 @@ export const useFectchGifs = (category) => {
                 loading: false
             });//Como traemos las imagenes ya que se agregó una categoria se espera traer, le cambiamos el estado a la data y por lo tanto al loading para que nos muestre las imagenes
         })
-
-        
     },[category])//Usamos el useefect para que se renderice solo cuando se modifica la categoria por eso se encierra en llaves cuadradas
 
-   
     return state;
 }

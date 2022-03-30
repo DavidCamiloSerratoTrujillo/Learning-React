@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Probar GridGifItem should show the component correctly 1`] = `
+<div
+  className="card cola cao"
+>
+  <img
+    alt="Soy un titulo"
+    src="https://localhost/algo.jpg;"
+  />
+  <p>
+    Soy un titulo
+  </p>
+</div>
+`;
