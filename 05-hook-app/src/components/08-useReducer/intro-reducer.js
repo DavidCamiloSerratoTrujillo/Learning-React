@@ -12,7 +12,7 @@ const todoReducer = (state = initialstate,action) =>{
     return state;
 }
 let todos = todoReducer();
-console.log(todos);
+
 const newtodo = {
     id:2,
     toDo: 'Comprar leche',

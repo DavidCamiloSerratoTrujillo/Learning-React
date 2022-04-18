@@ -1,7 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-// import { Padre } from './components/07-tarea-memo/Padre';
+
+import { createRoot } from 'react-dom/client';
+
 import { TodoApp } from './components/08-useReducer/TodoApp';
+
+const divroot = document.getElementById('root');
+const root = createRoot(divroot); // createRoot(container!) if you use TypeScript
+root.render(<TodoApp tab="home" />);
+
+
+// import { Padre } from './components/07-tarea-memo/Padre';
 // import { MemoHook } from './components/06-memos/MemoHook';
 // import { FormWithCustomHook } from './components/02-useEffect/FormWithCustomHook';
 // import { MultipleCustomHooks } from './components/03-Examples/MultipleCustomHooks';
@@ -19,9 +27,8 @@ import { TodoApp } from './components/08-useReducer/TodoApp';
 // <CounterApp/>
 /* <SimpleForm/> */
 
-ReactDOM.render(
+// ReactDOM.render(
     
-  <TodoApp/>,
-  document.getElementById('root')
-);
-
+//   <TodoApp/>,
+//   document.getElementById('root')
+// );
